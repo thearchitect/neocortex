@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="TestingProject"
+	ProjectGUID="{5F8F7779-748E-4F0A-97B2-CFE4261C0A42}"
+	RootNamespace="Shd_OCV"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="0"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				EnableIntrinsicFunctions="false"
+				WholeProgramOptimization="false"
+				AdditionalIncludeDirectories="..\Common\;..\Common\OpenCV\build\include\;..\Common\GLFW\Include"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="opencv_core231d.lib opencv_highgui231d.lib opencv_imgproc231d.lib opengl32.lib glut32.lib glu32.lib glaux.lib glfw.lib"
+				OutputFile="$(OutDir)\$(ProjectName).exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\Common\;..\Common\OpenCV\build\x86\vc9\lib;..\Common\GLFW\Lib"
+				IgnoreAllDefaultLibraries="false"
+				IgnoreDefaultLibraryNames="libc.lib"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				EnableCOMDATFolding="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="..\Common\;..\Common\OpenCV\build\include\;..\Common\GLFW\Include"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="opencv_core231.lib opencv_highgui231.lib opencv_imgproc231.lib opengl32.lib glut32.lib glu32.lib glaux.lib glfw.lib"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\Common\;..\Common\OpenCV\build\x86\vc9\lib;..\Common\GLFW\Lib"
+				IgnoreDefaultLibraryNames="libc.lib"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\common_defs.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\shader_snake.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SnakeImage.cpp"
+				>
+			</File>
+			<Filter
+				Name="Common"
+				>
+				<Filter
+					Name="Base Math Library"
+					>
+					<File
+						RelativePath="..\Common\Base Math Library\Matrix2D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Matrix3D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Matrix4D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Util.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Vector2D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Vector3D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Vector4D.cpp"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Base Render Library"
+					>
+					<File
+						RelativePath="..\Common\Base Render Library\Camera.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\FilterMode.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\FrameBuffer.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Keyboard.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Mouse.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\RenderBuffer.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\ShaderManager.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Texture1D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Texture2D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Texture3D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\TextureData1D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\TextureData2D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\TextureData3D.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\WrapMode.cpp"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="GLee"
+					>
+					<File
+						RelativePath="..\Common\GLee\GLee.cpp"
+						>
+					</File>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\common_defs.h"
+				>
+			</File>
+			<File
+				RelativePath=".\shader_snake.h"
+				>
+			</File>
+			<Filter
+				Name="Common"
+				>
+				<Filter
+					Name="Base Math Library"
+					>
+					<File
+						RelativePath="..\Common\Base Math Library\Matrix2D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Matrix3D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Matrix4D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Util.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Vector2D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Vector3D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Math Library\Vector4d.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Base Render Library"
+					>
+					<File
+						RelativePath="..\Common\Base Render Library\Camera.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\FilterMode.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\FrameBuffer.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Keyboard.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Mouse.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\RenderBuffer.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\ShaderManager.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Texture1D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Texture2D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\Texture3D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\TextureData1D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\TextureData2D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\TextureData3D.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Common\Base Render Library\WrapMode.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="GLee"
+					>
+					<File
+						RelativePath="..\Common\GLee\GLee.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+		</Filter>
+		<Filter
+			Name="shader_snake"
+			>
+			<File
+				RelativePath=".\shader_snake\Common.vs"
+				>
+			</File>
+			<File
+				RelativePath=".\shader_snake\MultiSnake.fs"
+				>
+			</File>
+			<File
+				RelativePath=".\shader_snake\SingleSnake.fs"
+				>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
